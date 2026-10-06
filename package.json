@@ -1,0 +1,39 @@
+{
+  "name": "usege-claude",
+  "version": "1.0.0",
+  "description": "Claude 5시간 사용량 위젯 (막대 + 초기화 시각)",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable"
+  },
+  "license": "MIT",
+  "build": {
+    "appId": "com.jbjang.usege-claude",
+    "productName": "usege-claude",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**"
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        "portable"
+      ]
+    },
+    "portable": {
+      "artifactName": "usege-claude.exe"
+    },
+    "compression": "maximum"
+  },
+  "devDependencies": {
+    "electron": "^44.5.1",
+    "electron-builder": "^26.15.3"
+  }
+}
