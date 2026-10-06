@@ -22,7 +22,6 @@
       "renderer/**"
     ],
     "win": {
-      "icon": "build/icon.ico",
       "target": [
         "portable"
       ]

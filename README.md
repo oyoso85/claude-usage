@@ -72,6 +72,17 @@ GET https://claude.ai/api/organizations
 GET https://claude.ai/api/organizations/{orgId}/usage
 ```
 
+## 빌드
+
+```bash
+npm install
+npm run build        # dist/usege-claude.exe
+```
+
+아이콘은 저장소에 포함하지 않았다. `build/icon.ico`를 두면 그 아이콘으로 빌드되고,
+없으면 Electron 기본 아이콘이 붙는다(빌드는 그대로 된다). Windows 아이콘은 256x256을
+포함해야 하므로, 작은 원본만 있다면 여러 크기를 담은 .ico로 만들어 넣어야 한다.
+
 ## 개발
 
 ```bash
